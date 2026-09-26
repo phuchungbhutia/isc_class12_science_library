@@ -2,8 +2,14 @@
   "801:Unclassified / General": {
     "subject_code": "801",
     "unit": "Unclassified / General",
-    "question_count": 88,
-    "total_marks": 209
+    "question_count": 248,
+    "total_marks": 589
+  },
+  "860:Calculus": {
+    "subject_code": "860",
+    "unit": "Calculus",
+    "question_count": 40,
+    "total_marks": 160
   },
   "860:Relations & Functions": {
     "subject_code": "860",
@@ -14,14 +20,14 @@
   "860:Unclassified / General": {
     "subject_code": "860",
     "unit": "Unclassified / General",
-    "question_count": 84,
-    "total_marks": 204
+    "question_count": 204,
+    "total_marks": 424
   },
   "861:Alternating Current": {
     "subject_code": "861",
     "unit": "Alternating Current",
-    "question_count": 12,
-    "total_marks": 36
+    "question_count": 32,
+    "total_marks": 96
   },
   "861:Current Electricity": {
     "subject_code": "861",
@@ -56,25 +62,25 @@
   "861:Unclassified / General": {
     "subject_code": "861",
     "unit": "Unclassified / General",
-    "question_count": 66,
-    "total_marks": 154
+    "question_count": 206,
+    "total_marks": 474
   },
   "862:Unclassified / General": {
     "subject_code": "862",
     "unit": "Unclassified / General",
-    "question_count": 88,
-    "total_marks": 209
+    "question_count": 248,
+    "total_marks": 589
   },
   "863:Unclassified / General": {
     "subject_code": "863",
     "unit": "Unclassified / General",
-    "question_count": 88,
-    "total_marks": 209
+    "question_count": 248,
+    "total_marks": 589
   },
   "868:Unclassified / General": {
     "subject_code": "868",
     "unit": "Unclassified / General",
-    "question_count": 88,
-    "total_marks": 209
+    "question_count": 248,
+    "total_marks": 589
   }
 }
