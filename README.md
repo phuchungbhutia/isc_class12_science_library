@@ -156,7 +156,7 @@ python serve_viewer.py
 
 Open **`http://localhost:8080`** in any web browser.
 
-> **Encountering issues or port errors?** Refer to the comprehensive [Troubleshooting Guide](https://www.google.com/search?q=TROUBLESHOOTING.md&utm_source=gemini) for solutions to common deployment, server, and pipeline issues.
+> **Encountering issues or port errors?** Refer to the comprehensive [Troubleshooting Guide](TROUBLESHOOTING.md) for solutions to common deployment, server, and pipeline issues.
 
 
 ---
@@ -207,6 +207,6 @@ git push origin main
 
 * **Maintainer**: Phuchung Bhutia
 * **Contact**: `phuchungbhutia@gmail.com`
-* **GitHub**: [@phuchungbhutia](https://www.google.com/search?q=https://github.com/phuchungbhutia&utm_source=gemini)
+* **GitHub**: [@phuchungbhutia](https://github.com/phuchungbhutia)
 
 ---
