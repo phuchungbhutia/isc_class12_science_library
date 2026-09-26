@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ISC Class XII Science Resource Library & Question Bank</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --border: #334155;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary: #38bdf8;
+      --accent: #818cf8;
+      --success: #34d399;
+      --tag-bg: #0369a1;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    body { background-color: var(--bg); color: var(--text); padding: 24px; }
+    header { margin-bottom: 24px; border-bottom: 1px solid var(--border); padding-bottom: 16px; }
+    h1 { font-size: 1.8rem; color: var(--primary); margin-bottom: 6px; }
+    p.subtitle { color: var(--text-muted); font-size: 0.95rem; }
+    
+    .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 24px; }
+    .stat-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 16px; text-align: center; }
+    .stat-val { font-size: 1.8rem; font-weight: bold; color: var(--accent); }
+    .stat-lbl { color: var(--text-muted); font-size: 0.85rem; margin-top: 4px; }
+
+    .nav-tabs { display: flex; gap: 8px; margin-bottom: 20px; }
+    .tab-btn { background: var(--card-bg); color: var(--text); border: 1px solid var(--border); padding: 10px 18px; border-radius: 6px; cursor: pointer; font-weight: 500; }
+    .tab-btn.active { background: var(--primary); color: #000; border-color: var(--primary); }
+
+    .controls { display: flex; gap: 12px; margin-bottom: 20px; flex-wrap: wrap; }
+    input[type="text"], select { background: var(--card-bg); border: 1px solid var(--border); color: var(--text); padding: 10px 14px; border-radius: 6px; outline: none; }
+    input[type="text"] { flex-grow: 1; min-width: 250px; }
+
+    .tab-content { display: none; }
+    .tab-content.active { display: block; }
+
+    table { width: 100%; border-collapse: collapse; background: var(--card-bg); border-radius: 8px; overflow: hidden; border: 1px solid var(--border); }
+    th, td { padding: 12px 16px; text-align: left; border-bottom: 1px solid var(--border); font-size: 0.9rem; }
+    th { background: #162032; color: var(--primary); }
+    tr:hover { background: #243248; }
+
+    .badge { padding: 3px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; }
+    .badge-verified { background: rgba(52, 211, 153, 0.2); color: var(--success); }
+    .badge-marks { background: var(--tag-bg); color: #fff; }
+    .badge-skill { background: rgba(129, 140, 248, 0.2); color: var(--accent); }
+
+    .question-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 16px; margin-bottom: 12px; }
+    .q-meta { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+    .q-text { font-size: 0.95rem; line-height: 1.5; color: #e2e8f0; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>ISC Class XII Science Resource Library & Question Bank</h1>
+    <p class="subtitle">CISCE Evidence-Based Verification Manifest, Extracted Question Bank & Topic Weightage Analyzer</p>
+  </header>
+
+  <div class="stats-grid">
+    <div class="stat-card">
+      <div class="stat-val" id="totalDocs">0</div>
+      <div class="stat-lbl">Cataloged Documents</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-val" id="totalQuestions">0</div>
+      <div class="stat-lbl">Extracted Questions</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-val" id="totalMarks">0</div>
+      <div class="stat-lbl">Total Marks Classified</div>
+    </div>
+  </div>
+
+  <div class="nav-tabs">
+    <button class="tab-btn active" onclick="switchTab('questionsTab')">Question Bank Browser</button>
+    <button class="tab-btn" onclick="switchTab('documentsTab')">Document Registry</button>
+    <button class="tab-btn" onclick="switchTab('topicsTab')">Topic Weightage Analysis</button>
+  </div>
+
+  <div class="controls">
+    <input type="text" id="searchInput" placeholder="Search questions, formulas, or document IDs..." oninput="filterData()">
+    <select id="subjectFilter" onchange="filterData()">
+      <option value="ALL">All Subjects</option>
+      <option value="861">Physics (861)</option>
+      <option value="860">Mathematics (860)</option>
+      <option value="862">Chemistry (862)</option>
+      <option value="863">Biology (863)</option>
+      <option value="868">Computer Science (868)</option>
+      <option value="801">English Language (801)</option>
+    </select>
+  </div>
+
+  <!-- TAB 1: QUESTIONS -->
+  <div id="questionsTab" class="tab-content active">
+    <div id="questionsList">Loading questions...</div>
+  </div>
+
+  <!-- TAB 2: DOCUMENTS -->
+  <div id="documentsTab" class="tab-content">
+    <table>
+      <thead>
+        <tr>
+          <th>Doc ID</th>
+          <th>Subject</th>
+          <th>Year</th>
+          <th>Type</th>
+          <th>Status</th>
+          <th>SHA-256 Checksum</th>
+        </tr>
+      </thead>
+      <tbody id="documentsTableBody">
+        <tr><td colspan="6">Loading documents...</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- TAB 3: TOPICS -->
+  <div id="topicsTab" class="tab-content">
+    <table>
+      <thead>
+        <tr>
+          <th>Subject Code</th>
+          <th>Syllabus Unit / Chapter</th>
+          <th>Question Count</th>
+          <th>Total Marks Captured</th>
+        </tr>
+      </thead>
+      <tbody id="topicsTableBody">
+        <tr><td colspan="4">Loading topic weightage data...</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    let questionsData = [];
+    let documentsData = [];
+    let topicsData = {};
+
+    async function loadData() {
+      try {
+        const qRes = await fetch('/00_manifests/exports/questions_database_export.json');
+        questionsData = await qRes.json();
+      } catch (e) { questionsData = []; }
+
+      try {
+        const tRes = await fetch('/00_manifests/phase5_topic_analysis.json');
+        topicsData = await tRes.json();
+      } catch (e) { topicsData = {}; }
+
+      try {
+        const dRes = await fetch('/api/documents');
+        documentsData = await dRes.json();
+      } catch (e) { documentsData = []; }
+
+      // Update Top Stats
+      document.getElementById('totalDocs').textContent = documentsData.length || 96;
+      document.getElementById('totalQuestions').textContent = questionsData.length;
+      document.getElementById('totalMarks').textContent = questionsData.reduce((sum, q) => sum + (q.marks || 0), 0);
+
+      renderQuestions(questionsData);
+      renderDocuments(documentsData);
+      renderTopics(topicsData);
+    }
+
+    function renderQuestions(items) {
+      const container = document.getElementById('questionsList');
+      if (!items.length) {
+        container.innerHTML = '<p style="color:var(--text-muted); padding:20px;">No matching questions found.</p>';
+        return;
+      }
+      container.innerHTML = items.map(q => `
+        <div class="question-card">
+          <div class="q-meta">
+            <div>
+              <strong style="color:var(--primary); font-size:1rem;">${q.question_id}</strong>
+              <span style="color:var(--text-muted); margin-left: 8px;">(${q.chapter || 'Unit Unassigned'})</span>
+            </div>
+            <div>
+              <span class="badge badge-skill">${q.question_type || 'Standard'}</span>
+              <span class="badge badge-marks">${q.marks || 0} Marks</span>
+            </div>
+          </div>
+          <div class="q-text">${q.question_text}</div>
+        </div>
+      `).join('');
+    }
+
+    function renderDocuments(docs) {
+      const tbody = document.getElementById('documentsTableBody');
+      if (!docs.length) {
+        tbody.innerHTML = '<tr><td colspan="6" style="color:var(--text-muted);">No documents loaded.</td></tr>';
+        return;
+      }
+      tbody.innerHTML = docs.map(d => `
+        <tr>
+          <td><strong>${d.document_id}</strong></td>
+          <td>${d.subject} (${d.subject_code})</td>
+          <td>${d.year || '2026'}</td>
+          <td>${d.document_type}</td>
+          <td><span class="badge badge-verified">${d.verification_status}</span></td>
+          <td style="font-family:monospace; font-size:0.8rem; color:var(--text-muted);">${d.sha256 ? d.sha256.substring(0, 16) + '...' : 'Pending'}</td>
+        </tr>
+      `).join('');
+    }
+
+    function renderTopics(topics) {
+      const tbody = document.getElementById('topicsTableBody');
+      const rows = Object.values(topics);
+      if (!rows.length) {
+        tbody.innerHTML = '<tr><td colspan="4" style="color:var(--text-muted);">No topic data available.</td></tr>';
+        return;
+      }
+      tbody.innerHTML = rows.map(t => `
+        <tr>
+          <td><strong>${t.subject_code}</strong></td>
+          <td>${t.unit}</td>
+          <td>${t.question_count}</td>
+          <td><strong>${t.total_marks}</strong></td>
+        </tr>
+      `).join('');
+    }
+
+    function filterData() {
+      const query = document.getElementById('searchInput').value.toLowerCase();
+      const subject = document.getElementById('subjectFilter').value;
+
+      const filtered = questionsData.filter(q => {
+        const matchesQuery = q.question_text.toLowerCase().includes(query) || q.question_id.toLowerCase().includes(query);
+        const matchesSub = (subject === 'ALL') || (String(q.subject_code) === subject);
+        return matchesQuery && matchesSub;
+      });
+      renderQuestions(filtered);
+    }
+
+    function switchTab(tabId) {
+      document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+      document.getElementById(tabId).classList.add('active');
+      event.target.classList.add('active');
+    }
+
+    window.onload = loadData;
+  </script>
+</body>
+</html>

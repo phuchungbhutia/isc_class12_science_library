@@ -1,0 +1,177 @@
+{
+  "timestamp": "2026-09-26T08:43:06Z",
+  "total_cataloged_entries": 96,
+  "verified_intact_files": 68,
+  "missing_files_awaiting_intake": 0,
+  "corrupted_or_truncated_files": [
+    {
+      "document_id": "DOC-SYL-860",
+      "path": "./isc_class12_science_library\\01_syllabus_and_regulations\\860_mathematics\\ISC_Syllabus_Mathematics_860.pdf",
+      "file_size": 300722,
+      "reason": "File size (300722 bytes) below threshold or missing %PDF- header."
+    },
+    {
+      "document_id": "DOC-SYL-861",
+      "path": "./isc_class12_science_library\\01_syllabus_and_regulations\\861_physics\\ISC_Syllabus_Physics_861.pdf",
+      "file_size": 300722,
+      "reason": "File size (300722 bytes) below threshold or missing %PDF- header."
+    },
+    {
+      "document_id": "DOC-SYL-862",
+      "path": "./isc_class12_science_library\\01_syllabus_and_regulations\\862_chemistry\\ISC_Syllabus_Chemistry_862.pdf",
+      "file_size": 300722,
+      "reason": "File size (300722 bytes) below threshold or missing %PDF- header."
+    },
+    {
+      "document_id": "DOC-SYL-863",
+      "path": "./isc_class12_science_library\\01_syllabus_and_regulations\\863_biology\\ISC_Syllabus_Biology_863.pdf",
+      "file_size": 300722,
+      "reason": "File size (300722 bytes) below threshold or missing %PDF- header."
+    },
+    {
+      "document_id": "DOC-SYL-868",
+      "path": "./isc_class12_science_library\\01_syllabus_and_regulations\\868_computer_science\\ISC_Syllabus_Computer_Science_868.pdf",
+      "file_size": 300722,
+      "reason": "File size (300722 bytes) below threshold or missing %PDF- header."
+    },
+    {
+      "document_id": "DOC-SYL-801",
+      "path": "./isc_class12_science_library\\01_syllabus_and_regulations\\801_english_language\\ISC_Syllabus_English_Language_801.pdf",
+      "file_size": 300722,
+      "reason": "File size (300722 bytes) below threshold or missing %PDF- header."
+    },
+    {
+      "document_id": "DOC-SPEC-26-860",
+      "path": "./isc_class12_science_library\\02_specimen_papers\\860_mathematics\\ISC_Specimen_Paper_Mathematics_860.pdf",
+      "file_size": 309384,
+      "reason": "File size (309384 bytes) below threshold or missing %PDF- header."
+    },
+    {
+      "document_id": "DOC-SPEC-26-862",
+      "path": "./isc_class12_science_library\\02_specimen_papers\\862_chemistry\\ISC_Specimen_Paper_Chemistry_862.pdf",
+      "file_size": 309384,
+      "reason": "File size (309384 bytes) below threshold or missing %PDF- header."
+    },
+    {
+      "document_id": "DOC-SPEC-26-863",
+      "path": "./isc_class12_science_library\\02_specimen_papers\\863_biology\\ISC_Specimen_Paper_Biology_863.pdf",
+      "file_size": 309384,
+      "reason": "File size (309384 bytes) below threshold or missing %PDF- header."
+    },
+    {
+      "document_id": "DOC-SPEC-26-868",
+      "path": "./isc_class12_science_library\\02_specimen_papers\\868_computer_science\\ISC_Specimen_Paper_Computer_Science_868.pdf",
+      "file_size": 309384,
+      "reason": "File size (309384 bytes) below threshold or missing %PDF- header."
+    },
+    {
+      "document_id": "DOC-SPEC-26-801",
+      "path": "./isc_class12_science_library\\02_specimen_papers\\801_english_language\\ISC_Specimen_Paper_English_Language_801.pdf",
+      "file_size": 309384,
+      "reason": "File size (309384 bytes) below threshold or missing %PDF- header."
+    },
+    {
+      "document_id": "DOC-APP-2024-860",
+      "path": "./isc_class12_science_library\\04_pupil_performance_analysis\\860_mathematics\\ISC_2024_Pupil_Performance_Analysis_Mathematics_860.pdf",
+      "file_size": 357327,
+      "reason": "File size (357327 bytes) below threshold or missing %PDF- header."
+    },
+    {
+      "document_id": "DOC-APP-2025-860",
+      "path": "./isc_class12_science_library\\04_pupil_performance_analysis\\860_mathematics\\ISC_2025_Pupil_Performance_Analysis_Mathematics_860.pdf",
+      "file_size": 357327,
+      "reason": "File size (357327 bytes) below threshold or missing %PDF- header."
+    },
+    {
+      "document_id": "DOC-APP-2023-861",
+      "path": "./isc_class12_science_library\\04_pupil_performance_analysis\\861_physics\\ISC_2023_Pupil_Performance_Analysis_Physics_861.pdf",
+      "file_size": 357327,
+      "reason": "File size (357327 bytes) below threshold or missing %PDF- header."
+    },
+    {
+      "document_id": "DOC-APP-2024-861",
+      "path": "./isc_class12_science_library\\04_pupil_performance_analysis\\861_physics\\ISC_2024_Pupil_Performance_Analysis_Physics_861.pdf",
+      "file_size": 357327,
+      "reason": "File size (357327 bytes) below threshold or missing %PDF- header."
+    },
+    {
+      "document_id": "DOC-APP-2025-861",
+      "path": "./isc_class12_science_library\\04_pupil_performance_analysis\\861_physics\\ISC_2025_Pupil_Performance_Analysis_Physics_861.pdf",
+      "file_size": 357327,
+      "reason": "File size (357327 bytes) below threshold or missing %PDF- header."
+    },
+    {
+      "document_id": "DOC-APP-2023-862",
+      "path": "./isc_class12_science_library\\04_pupil_performance_analysis\\862_chemistry\\ISC_2023_Pupil_Performance_Analysis_Chemistry_862.pdf",
+      "file_size": 357327,
+      "reason": "File size (357327 bytes) below threshold or missing %PDF- header."
+    },
+    {
+      "document_id": "DOC-APP-2024-862",
+      "path": "./isc_class12_science_library\\04_pupil_performance_analysis\\862_chemistry\\ISC_2024_Pupil_Performance_Analysis_Chemistry_862.pdf",
+      "file_size": 357327,
+      "reason": "File size (357327 bytes) below threshold or missing %PDF- header."
+    },
+    {
+      "document_id": "DOC-APP-2025-862",
+      "path": "./isc_class12_science_library\\04_pupil_performance_analysis\\862_chemistry\\ISC_2025_Pupil_Performance_Analysis_Chemistry_862.pdf",
+      "file_size": 357327,
+      "reason": "File size (357327 bytes) below threshold or missing %PDF- header."
+    },
+    {
+      "document_id": "DOC-APP-2023-863",
+      "path": "./isc_class12_science_library\\04_pupil_performance_analysis\\863_biology\\ISC_2023_Pupil_Performance_Analysis_Biology_863.pdf",
+      "file_size": 357327,
+      "reason": "File size (357327 bytes) below threshold or missing %PDF- header."
+    },
+    {
+      "document_id": "DOC-APP-2024-863",
+      "path": "./isc_class12_science_library\\04_pupil_performance_analysis\\863_biology\\ISC_2024_Pupil_Performance_Analysis_Biology_863.pdf",
+      "file_size": 357327,
+      "reason": "File size (357327 bytes) below threshold or missing %PDF- header."
+    },
+    {
+      "document_id": "DOC-APP-2025-863",
+      "path": "./isc_class12_science_library\\04_pupil_performance_analysis\\863_biology\\ISC_2025_Pupil_Performance_Analysis_Biology_863.pdf",
+      "file_size": 357327,
+      "reason": "File size (357327 bytes) below threshold or missing %PDF- header."
+    },
+    {
+      "document_id": "DOC-APP-2023-868",
+      "path": "./isc_class12_science_library\\04_pupil_performance_analysis\\868_computer_science\\ISC_2023_Pupil_Performance_Analysis_Computer_science_868.pdf",
+      "file_size": 357327,
+      "reason": "File size (357327 bytes) below threshold or missing %PDF- header."
+    },
+    {
+      "document_id": "DOC-APP-2024-868",
+      "path": "./isc_class12_science_library\\04_pupil_performance_analysis\\868_computer_science\\ISC_2024_Pupil_Performance_Analysis_Computer_science_868.pdf",
+      "file_size": 357327,
+      "reason": "File size (357327 bytes) below threshold or missing %PDF- header."
+    },
+    {
+      "document_id": "DOC-APP-2025-868",
+      "path": "./isc_class12_science_library\\04_pupil_performance_analysis\\868_computer_science\\ISC_2025_Pupil_Performance_Analysis_Computer_science_868.pdf",
+      "file_size": 357327,
+      "reason": "File size (357327 bytes) below threshold or missing %PDF- header."
+    },
+    {
+      "document_id": "DOC-APP-2023-801",
+      "path": "./isc_class12_science_library\\04_pupil_performance_analysis\\801_english_language\\ISC_2023_Pupil_Performance_Analysis_English_language_801.pdf",
+      "file_size": 357327,
+      "reason": "File size (357327 bytes) below threshold or missing %PDF- header."
+    },
+    {
+      "document_id": "DOC-APP-2024-801",
+      "path": "./isc_class12_science_library\\04_pupil_performance_analysis\\801_english_language\\ISC_2024_Pupil_Performance_Analysis_English_language_801.pdf",
+      "file_size": 357327,
+      "reason": "File size (357327 bytes) below threshold or missing %PDF- header."
+    },
+    {
+      "document_id": "DOC-APP-2025-801",
+      "path": "./isc_class12_science_library\\04_pupil_performance_analysis\\801_english_language\\ISC_2025_Pupil_Performance_Analysis_English_language_801.pdf",
+      "file_size": 357327,
+      "reason": "File size (357327 bytes) below threshold or missing %PDF- header."
+    }
+  ],
+  "duplicates_detected": []
+}

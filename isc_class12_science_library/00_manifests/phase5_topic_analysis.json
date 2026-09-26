@@ -1,0 +1,80 @@
+{
+  "801:Unclassified / General": {
+    "subject_code": "801",
+    "unit": "Unclassified / General",
+    "question_count": 88,
+    "total_marks": 209
+  },
+  "860:Relations & Functions": {
+    "subject_code": "860",
+    "unit": "Relations & Functions",
+    "question_count": 12,
+    "total_marks": 24
+  },
+  "860:Unclassified / General": {
+    "subject_code": "860",
+    "unit": "Unclassified / General",
+    "question_count": 84,
+    "total_marks": 204
+  },
+  "861:Alternating Current": {
+    "subject_code": "861",
+    "unit": "Alternating Current",
+    "question_count": 12,
+    "total_marks": 36
+  },
+  "861:Current Electricity": {
+    "subject_code": "861",
+    "unit": "Current Electricity",
+    "question_count": 13,
+    "total_marks": 27
+  },
+  "861:Electrostatics": {
+    "subject_code": "861",
+    "unit": "Electrostatics",
+    "question_count": 2,
+    "total_marks": 3
+  },
+  "861:Magnetism & EMI": {
+    "subject_code": "861",
+    "unit": "Magnetism & EMI",
+    "question_count": 1,
+    "total_marks": 1
+  },
+  "861:Modern Physics": {
+    "subject_code": "861",
+    "unit": "Modern Physics",
+    "question_count": 1,
+    "total_marks": 5
+  },
+  "861:Optics": {
+    "subject_code": "861",
+    "unit": "Optics",
+    "question_count": 1,
+    "total_marks": 2
+  },
+  "861:Unclassified / General": {
+    "subject_code": "861",
+    "unit": "Unclassified / General",
+    "question_count": 66,
+    "total_marks": 154
+  },
+  "862:Unclassified / General": {
+    "subject_code": "862",
+    "unit": "Unclassified / General",
+    "question_count": 88,
+    "total_marks": 209
+  },
+  "863:Unclassified / General": {
+    "subject_code": "863",
+    "unit": "Unclassified / General",
+    "question_count": 88,
+    "total_marks": 209
+  },
+  "868:Unclassified / General": {
+    "subject_code": "868",
+    "unit": "Unclassified / General",
+    "question_count": 88,
+    "total_marks": 209
+  }
+}
