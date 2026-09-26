@@ -156,6 +156,9 @@ python serve_viewer.py
 
 Open **`http://localhost:8080`** in any web browser.
 
+> **Encountering issues or port errors?** Refer to the comprehensive [Troubleshooting Guide](https://www.google.com/search?q=TROUBLESHOOTING.md&utm_source=gemini) for solutions to common deployment, server, and pipeline issues.
+
+
 ---
 
 ## Deployment to GitHub Pages
@@ -206,22 +209,4 @@ git push origin main
 * **Contact**: `phuchungbhutia@gmail.com`
 * **GitHub**: [@phuchungbhutia](https://www.google.com/search?q=https://github.com/phuchungbhutia&utm_source=gemini)
 
-```
-
 ---
-
-### How to Save and Commit This File
-
-Run these commands in your VSCodium terminal:
-
-```powershell
-# 1. Stage the new README.md file
-git add README.md
-
-# 2. Commit it to git
-git commit -m "Add comprehensive README with badges, file structure, and deployment instructions"
-
-# 3. Push to GitHub
-git push origin main
-
-```
